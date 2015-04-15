@@ -10,3 +10,12 @@ KVC机制不仅⽀支持对象,还⽀支持标量和结构体类型,这些⾮非
 键(Key)是⼀一个字符串⽤用来标识对象⾥里⾯面的⼀一个指定的属性。⼀一般⼀一个键对应对象的存取⽅方法或 实例变量。键必须是ASCII码,⼀一般以⼩小写字⺟母开始,不能包含空格。
 A key path is a string of dot separated keys that is used to specify a sequence of object properties to traverse. The property of the first key in the sequence is relative to the receiver, and each subsequent key is evaluated relative to the value of the previous property.
 键路径(Key Path)是⼀一个由点进⾏行分割的⼀一系列键组成的字符串
+
+``
+alueForKey:(NSString *)key
+- (void)setValue:(id)value forKeyPath:(NSString *)keyPath
+- (id)valueForKeyPath:(NSString *)keyPath
+- (id)valueForUndefinedKey:(NSString *)key
+- (void)setNilValueForKey:(NSString *)key
+￼￼￼
+``
